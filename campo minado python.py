@@ -43,16 +43,18 @@ print("\n##########################\n")
 while p<=b-1:
         c=int(input(f"Agora coloque a LINHA da coordenada que você acha que tem uma bomba (de 0 a {d-1}: )\n"))
         u=int(input(f"Agora coloque a COLUNA da coordenada que você acha que tem uma bomba (de 0 a {d-1}: )\n"))
-        print("Se nada acontecer, significa que errou as coordenadas das bombas")
+        print("\nSe nada acontecer, significa que errou as coordenadas das bombas")
         for t in range(len(ma)):
             if c==ma[t] and u==mb[t]:   #verificando se existe uma bomba na coordenada que o usuário inseriu
                 m[c][u]="-X-"
                 p=p+1
-                print("VOCÊ ACERTOU UMA BOMBA")
+                print("\nVOCÊ ACERTOU UMA BOMBA\n")
                 for i in range(d):  #imprimindo o campo atualizado com a última bomba explodida
                     for j in range(d):
                         print(m[i][j], end=" ")
                     print()
 
 
-print("VOCÊ VENCEU")
+print("\nVOCÊ VENCEU\n")
+print("============================\n")
+f=input("Aperte qualquer tecla para finalizar o código")
